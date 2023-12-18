@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: 'notes'
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:${POSTGRES_DB_PORT:5432}/notes
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
